@@ -1,0 +1,14 @@
+@import "./var";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $roboto;
+}
+@import "./nav-bar";
+@import "./hero";
+@import "./movies";
+@import "./warning-box";
+@import "./latest-movies";
+@import "./upcoming";
+@import "./footer";

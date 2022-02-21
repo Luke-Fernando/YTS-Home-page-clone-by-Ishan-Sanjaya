@@ -1,0 +1,66 @@
+#latest-movies {
+  width: 100%;
+  height: auto;
+  background-color: #111111;
+}
+.movie-topics {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  margin: auto;
+}
+.latest-movie-header {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  h3 {
+    font-family: $roboto;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 18px;
+  }
+}
+.latest-browse {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $dark-white;
+    font-family: $roboto;
+    font-weight: 600;
+    &:hover {
+      color: rgba(255, 255, 255, 0.897);
+    }
+  }
+}
+#latest-movies-list {
+  margin-top: 1rem;
+}
+
+@media (max-width: 775px) {
+  .movie-topics {
+    width: 90%;
+  }
+}
+@media (max-width: 530px) {
+  .latest-movie-header {
+    width: 70%;
+    h3 {
+      font-size: 16px;
+    }
+  }
+  .latest-browse {
+    width: 30%;
+    a {
+      font-size: 15px;
+    }
+  }
+}

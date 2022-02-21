@@ -1,0 +1,20 @@
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-family: $roboto;
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 20px;
+    }
+}
+@media (max-width:775px){
+    footer{
+        h3{
+            font-size: 15px;
+        }
+    }
+}

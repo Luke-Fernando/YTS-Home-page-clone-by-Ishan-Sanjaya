@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- ------------------------ Roboto font link file ------------------------ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet" />
     <!-- -------------------------- custom style file -------------------------- -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- -------------------------- jQuery link file --------------------------- -->
-    <script src="jQuery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <!-- ------------------------ fontawesome pack link ------------------------ -->
     <script src="https://kit.fontawesome.com/4e769e3898.js" crossorigin="anonymous"></script>
     <!-- ------------------------------ open sans ------------------------------ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
     <title>YIFY Clone Page By Ishan-Sanjaya</title>
 </head>
 
@@ -26,7 +27,7 @@
         <div id="nav-sub">
             <div id="left-part">
                 <div id="logo-box">
-                    <a href="index.html"><img src="logo-YTS.svg" alt="yts-logo"></a>
+                    <a href="index.html"><img src="./assets/images/icons/logo-YTS.svg" alt="yts-logo" /></a>
                 </div>
                 <div id="logo-text-box">
                     <h3>HD movies at the smallest file size.</h3>
@@ -34,9 +35,10 @@
             </div>
             <div id="right-part">
                 <div id="search-bar-container">
-                    <div id="search-bar-controller"><i class="fas fa-search"></i><input placeholder="Quick search"
-                            type="text" id="search-bar" name="search"></div>
-
+                    <div id="search-bar-controller">
+                        <i class="fas fa-search"></i><input placeholder="Quick search" type="text" id="search-bar"
+                            name="search" />
+                    </div>
                 </div>
                 <div id="nav-links">
                     <ul>
@@ -80,7 +82,6 @@
                 </ul>
             </div>
         </div>
-
     </nav>
     <!-- ---------------------------- hero section ----------------------------- -->
     <main id="hero">
@@ -90,14 +91,16 @@
                     <h1>Download YTS YIFY movies: HD smallest size</h1>
                 </div>
                 <div id="head-paragraph">
-                    <p>Welcome to the official <b>YTS.MX</b>(.LT) website. Here you can browse and download YIFY movies
-                        in
-                        <br> excellent 720p, 1080p, 2160p 4K and 3D quality, all at the smallest file size. YTS Movies
-                        Torrents.
+                    <p>
+                        Welcome to the official <b>YTS.MX</b>(.LT) website. Here you can
+                        browse and download YIFY movies in <br />
+                        excellent 720p, 1080p, 2160p 4K and 3D quality, all at the
+                        smallest file size. YTS Movies Torrents.
                     </p>
                 </div>
                 <div id="header-imp-link">
-                    <a href="#">IMPORTANT - YTS.MX is the only new official domain for YIFY Movies</a>
+                    <a href="#">IMPORTANT - YTS.MX is the only new official domain for YIFY
+                        Movies</a>
                 </div>
                 <div id="whole-topic">
                     <div id="popular-topic">
@@ -105,7 +108,9 @@
                         <h3>Popular Downloads</h3>
                     </div>
                     <div id="blog-path">
-                        <div id="blog-icon"><img src="rss-icon.png" alt=""></div>
+                        <div id="blog-icon">
+                            <img src="./assets/images/icons/rss-icon.png" alt="" />
+                        </div>
                         <div id="blog-link"><a href="#">more...</a></div>
                     </div>
                 </div>
@@ -113,77 +118,18 @@
             <!-- --------------------------- popular movies ---------------------------- -->
             <div class="movies">
                 <!-- ---------------------------------- 1 ---------------------------------- -->
-                <div class="movie">
-                    <div id="p-movie1" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="medium-cover-THE.jpg" alt="The Hateful Eight">
-                    </div>
-                    <div class="details">
-                        <p>The Hateful Eight<br><span>2015</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="p-movie1" imgSrc="./assets/images/popular_download_movies/medium-cover-THE.jpg"
+                    imgAlt="The Hateful Eight" movieName="The Hateful Eight" movieYear="2015"></movie-card>
                 <!-- ---------------------------------- 2 ---------------------------------- -->
-                <div class="movie">
-                    <div id="p-movie2" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="medium-cover-matrix.jpg" alt="The Matrix">
-                    </div>
-                    <div class="details">
-                        <p>The Matrix<br><span>1999</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="p-movie2" imgSrc="./assets/images/popular_download_movies/medium-cover-matrix.jpg"
+                    imgAlt="The Matrix" movieName="The Matrix" movieYear="1999"></movie-card>
                 <!-- ---------------------------------- 3 ---------------------------------- -->
-                <div class="movie">
-                    <div id="p-movie3" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="medium-cover-yesterday.jpg" alt="Yesterday">
-                    </div>
-                    <div class="details">
-                        <p>Yesterday<br><span>2019</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="p-movie3"
+                    imgSrc="./assets/images/popular_download_movies/medium-cover-yesterday.jpg" imgAlt="Yesterday"
+                    movieName="Yesterday" movieYear="2019"></movie-card>
                 <!-- ---------------------------------- 4 ---------------------------------- -->
-                <div class="movie">
-                    <div id="p-movie4" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="medium-cover-memento.jpg" alt="Memento">
-                    </div>
-                    <div class="details">
-                        <p>Memento<br><span>2000</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="p-movie4" imgSrc="./assets/images/popular_download_movies/medium-cover-memento.jpg"
+                    imgAlt="Memento" movieName="Memento" movieYear="2000"></movie-card>
             </div>
             <!-- ----------------------------------------------------------------------- -->
             <!--                            Warning veePn box                            -->
@@ -193,38 +139,50 @@
                     <h1>Warning!<span>Download only with VPN...</span></h1>
                 </div>
                 <div id="paragraph-warning">
-                    <p id="normal-war-text">Downloading torrents is risky for you: your IP and leaked private data being
-                        actively tracked by
-                        your <span>ISP</span> and <span>Government Agencies</span>. Protect yourself from expensive
-                        lawsuits and fines NOW! You
-                        must use a VPN like <span>FAST</span>. It is the only way to download torrents fully anonymous
-                        by encrypting
-                        all traffic with zero logs.</p>
+                    <p id="normal-war-text">
+                        Downloading torrents is risky for you: your IP and leaked private
+                        data being actively tracked by your <span>ISP</span> and
+                        <span>Government Agencies</span>. Protect yourself from expensive
+                        lawsuits and fines NOW! You must use a VPN like <span>FAST</span>.
+                        It is the only way to download torrents fully anonymous by
+                        encrypting all traffic with zero logs.
+                    </p>
                     <!-- ----------------------- responsive warning text ----------------------- -->
-                    <p id="res-war-text">If you are not using a VPN already: Accessing and Playing Torrents on a
-                        Smartphone is risky and
-                        dangerous. You may be in <span>NETHERLANDS</span> and using: <span>Firefox 00.0 (Linux)</span>.
-                        Your IP is
-                        <span>000.000.000.000</span>. We strongly recommend all users protecting their device with a
-                        VPN.
+                    <p id="res-war-text">
+                        If you are not using a VPN already: Accessing and Playing Torrents
+                        on a Smartphone is risky and dangerous. You may be in
+                        <span>NETHERLANDS</span> and using:
+                        <span>Firefox 00.0 (Linux)</span>. Your IP is
+                        <span>000.000.000.000</span>. We strongly recommend all users
+                        protecting their device with a VPN.
                     </p>
                 </div>
                 <div id="user-data-warning">
-                    <p>Personal data disclosing your real identity: your IP address,<span
-                            id="ip-addr">000.000.000.000</span> is exposed, which
-                        points directly to your location in <span id="location">NETHERLANDS</span>. You are browsing
-                        with <span id="user-browser">Firefox 00.0 (Linux)</span>,
-                        monitor res.<span id="monitor-res">1920x1080px</span>, <span id="user-cpu-cores">0-cores</span>
-                        CPU . </p>
+                    <p>
+                        Personal data disclosing your real identity: your IP address,<span
+                            id="ip-addr">000.000.000.000</span>
+                        is exposed, which points directly to your location in
+                        <span id="location">NETHERLANDS</span>. You are browsing with
+                        <span id="user-browser">Firefox 00.0 (Linux)</span>, monitor
+                        res.<span id="monitor-res">1920x1080px</span>,
+                        <span id="user-cpu-cores">0-cores</span> CPU .
+                    </p>
                 </div>
                 <div id="blue-quote">
-                    <p>″Do not risk it! Protect yourself right now by downloading FAST VPN″ -<span>William</span></p>
+                    <p>
+                        ″Do not risk it! Protect yourself right now by downloading FAST
+                        VPN″ -<span>William</span>
+                    </p>
                 </div>
                 <div id="fast-vpn-btn">
                     <div id="btn-maker">
-                        <div id="download-img"><img src="download.png" alt=""></div>
+                        <div id="download-img">
+                            <img src="./assets/images/icons/download.png" alt="" />
+                        </div>
                         <div id="btn-text">
-                            <p><span id="normal-btn-text">Download FASTVPN</span><span id="res-btn-text">GET FAST</span>
+                            <p>
+                                <span id="normal-btn-text">Download FASTVPN</span><span id="res-btn-text">GET
+                                    FAST</span>
                             </p>
                         </div>
                     </div>
@@ -237,158 +195,42 @@
         <div class="sub-hero-sec">
             <div class="movie-topics" id="latest-movies-topics">
                 <div class="latest-movie-header">
-                    <h3>Latest YIFY Movies Torrents </h3>
+                    <h3>Latest YIFY Movies Torrents</h3>
                 </div>
                 <div class="latest-browse"><a href="#">Browse All</a></div>
             </div>
             <div class="movies">
                 <!-- ---------------------------------- 1 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie1" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_001.jpg" alt="Crows Explode">
-                    </div>
-                    <div class="details">
-                        <p>Crows Explode<br><span>2014</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="l-movie1" imgSrc="./assets/images/latest_movies/medium-cover_001.jpg"
+                    imgAlt="Crows Explode" movieName="Crows Explode" movieYear="2014"></movie-card>
                 <!-- ---------------------------------- 2 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie2" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_002.jpg" alt="Together">
-                    </div>
-                    <div class="details">
-                        <p>Together<br><span>2021</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="l-movie2" imgSrc="./assets/images/latest_movies/medium-cover_002.jpg"
+                    imgAlt="Together" movieName="Together" movieYear="2021"></movie-card>
                 <!-- ---------------------------------- 3 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie3" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_003.jpg" alt="Moonbound">
-                    </div>
-                    <div class="details">
-                        <p>Moonbound<br><span>2021</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="l-movie3" imgSrc="./assets/images/latest_movies/medium-cover_003.jpg"
+                    imgAlt="Moonbound" movieName="Moonbound" movieYear="2021"></movie-card>
                 <!-- ---------------------------------- 4 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie4" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_004.jpg" alt="Malignant">
-                    </div>
-                    <div class="details">
-                        <p>Malignant<br><span>2021</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="l-movie4" imgSrc="./assets/images/latest_movies/medium-cover_004.jpg"
+                    imgAlt="Malignant" movieName="Malignant" movieYear="2021"></movie-card>
             </div>
+
             <!-- ------------------------ latest movie section2 ------------------------ -->
             <div id="latest-movies-list" class="movies">
                 <!-- ---------------------------------- 5 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie5" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_005.jpg" alt="Home Sweet Home">
-                    </div>
-                    <div class="details">
-                        <p>Home Sweet Home<br><span>2021</span></p>
-                    </div>
-                </div>
+                <movie-card cardId="l-movie5" imgSrc="./assets/images/latest_movies/medium-cover_005.jpg"
+                    imgAlt="Home Sweet Home" movieName="Home Sweet Home" movieYear="2021"></movie-card>
                 <!-- ---------------------------------- 6 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie6" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_006.jpg" alt="Don't Breathe 2">
-                    </div>
-                    <div class="details">
-                        <p>Don't Breathe 2<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <movie-card cardId="l-movie6" imgSrc="./assets/images/latest_movies/medium-cover_006.jpg"
+                    imgAlt="Don't Breathe 2" movieName="Don't Breathe 2" movieYear="2021"></movie-card>
                 <!-- ---------------------------------- 7 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie7" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_007.jpg" alt="Prey">
-                    </div>
-                    <div class="details">
-                        <p>Prey<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <movie-card cardId="l-movie7" imgSrc="./assets/images/latest_movies/medium-cover_007.jpg" imgAlt="Prey"
+                    movieName="Prey" movieYear="2021"></movie-card>
                 <!-- ---------------------------------- 8 ---------------------------------- -->
-                <div class="movie">
-                    <div id="l-movie8" class="image">
-                        <div class="movie-hover-div">
-                            <div class="star"><i class="fas fa-star"></i></div>
-                            <div class="movie-rating">
-                                <h3>6 / 10</h3>
-                            </div>
-                            <div class="categorie">
-                                <p>Drama<br>Thriller</p>
-                            </div>
-                            <div class="movie-view-btn"><button>View Details</button></div>
-                        </div><img src="second_section/medium-cover_008.jpg" alt="Royal Jelly">
-                    </div>
-                    <div class="details">
-                        <p>Royal Jelly<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <movie-card cardId="l-movie8" imgSrc="./assets/images/latest_movies/medium-cover_008.jpg"
+                    imgAlt="Royal Jelly" movieName="Royal Jelly" movieYear="2021"></movie-card>
             </div>
         </div>
     </div>
@@ -397,56 +239,27 @@
         <div class="sub-hero-sec">
             <div class="movie-topics">
                 <div class="latest-movie-header">
-                    <h3>Upcoming YIFY Movies </h3>
+                    <h3>Upcoming YIFY Movies</h3>
                 </div>
                 <div class="latest-browse"><a href="#">Request a Movie</a></div>
             </div>
             <div class="movies">
                 <!-- ---------------------------------- 1 ---------------------------------- -->
-                <div class="movie">
-                    <div id="u-movie1" class="image">
 
-                        <div class="movie-hover-div">
-                            <div class="movie-view-btn"><button>View IMDb</button></div>
-                        </div><img src="Upcoming/upcoming-001.jpg" alt="Crows Explode">
-                    </div>
-                    <div class="details">
-                        <p>Crows Explode<br><span>2014</span></p>
-                    </div>
-                </div>
+                <upcoming-movie cardId="u-movie1" imgSrc="./assets/images/upcoming_movies/upcoming-001.jpg"
+                    imgAlt="Teenage Vampire" movieName="Teenage Vampire" movieYear="2020"></upcoming-movie>
                 <!-- ---------------------------------- 2 ---------------------------------- -->
-                <div class="movie">
-                    <div id="u-movie2" class="image">
-                        <div class="movie-hover-div">
-                            <div class="movie-view-btn"><button>View IMDb</button></a></div>
-                        </div><img src="Upcoming/upcoming-002.jpg" alt="Together">
-                    </div>
-                    <div class="details">
-                        <p>Together<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <upcoming-movie cardId="u-movie2" imgSrc="./assets/images/upcoming_movies/upcoming-002.jpg"
+                    imgAlt="Lady Usher" movieName="Lady Usher" movieYear="2020"></upcoming-movie>
                 <!-- ---------------------------------- 3 ---------------------------------- -->
-                <div class="movie">
-                    <div id="u-movie3" class="image">
-                        <div class="movie-hover-div">
-                            <div class="movie-view-btn"><button>View IMDb</button></div>
-                        </div><img src="Upcoming/upcoming-003.jpg" alt="Moonbound">
-                    </div>
-                    <div class="details">
-                        <p>Moonbound<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <upcoming-movie cardId="u-movie3" imgSrc="./assets/images/upcoming_movies/upcoming-003.jpg"
+                    imgAlt="The Italian Job" movieName="The Italian Job" movieYear="2003"></upcoming-movie>
                 <!-- ---------------------------------- 4 ---------------------------------- -->
-                <div class="movie">
-                    <div id="u-movie4" class="image">
-                        <div class="movie-hover-div">
-                            <div class="movie-view-btn"><button>View IMDb</button></div>
-                        </div><img src="Upcoming/upcoming-004.jpg" alt="Malignant">
-                    </div>
-                    <div class="details">
-                        <p>Malignant<br><span>2021</span></p>
-                    </div>
-                </div>
+
+                <upcoming-movie cardId="u-movie4" imgSrc="./assets/images/upcoming_movies/upcoming-004.jpg"
+                    imgAlt="The Hurt Locker" movieName="The Hurt Locker" movieYear="2008"></upcoming-movie>
             </div>
         </div>
     </div>
@@ -455,7 +268,8 @@
     </footer>
 
     <!-- --------------------------- custom js file ---------------------------- -->
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/components/movie-card.js"></script>
 </body>
 
 </html>

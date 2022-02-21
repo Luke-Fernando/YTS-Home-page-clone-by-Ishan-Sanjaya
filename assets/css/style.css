@@ -1,7 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
 #nav-bar {
   width: 100%;
   height: 60px;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,8 +248,8 @@
   }
 }
 #hero {
-  background-image: url(hero-background.jpg);
-  background-color: #1A1915;
+  background-image: url(../images/hero-background.jpg);
+  background-color: #1a1915;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -476,8 +483,6 @@
   font-size: 13.5px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.925);
-  padding-left: 5px;
-  margin-top: 2px;
 }
 .movie p span {
   color: rgba(255, 255, 255, 0.6);
@@ -489,37 +494,22 @@
   border: 6px solid white;
   width: 220px;
   height: 330px;
+  position: relative;
+  transition: all 200ms ease-in-out;
 }
-.image:hover:hover {
-  border: 6px solid;
-  -webkit-animation-name: BorderChange;
-          animation-name: BorderChange;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.image:hover {
+  border: 6px solid #00FF38;
+}
+.image:hover .movie-hover-div {
+  opacity: 1;
+}
+.image:hover .movie-view-btn button {
+  margin-top: 0;
 }
 .image img {
   width: 100%;
 }
 
-@-webkit-keyframes BorderChange {
-  0% {
-    border-color: white;
-  }
-  100% {
-    border-color: #00FF38;
-  }
-}
-
-@keyframes BorderChange {
-  0% {
-    border-color: white;
-  }
-  100% {
-    border-color: #00FF38;
-  }
-}
 .details {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -533,8 +523,16 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.733);
-  display: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   cursor: default;
+  transition: all 200ms ease-in-out;
 }
 
 /* --------------------------- hover div elements --------------------------- */
@@ -548,7 +546,6 @@
 .star i {
   font-size: 24px;
   color: #00FF38;
-  padding-top: 1.5rem;
 }
 
 .movie-rating {
@@ -577,7 +574,6 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  padding-top: 2rem;
 }
 
 .movie-view-btn {
@@ -586,7 +582,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
 }
 .movie-view-btn button {
   width: 150px;
@@ -596,37 +591,23 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   border: none;
-  padding: 0 5px 0 5px;
+  margin: 2rem 0 0 0;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 .movie-view-btn button:hover {
   background-color: rgba(58, 156, 58, 0.822);
 }
 
-@-webkit-keyframes in {
-  0% {
-    left: 0px;
-    top: 10px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
-
-@keyframes in {
-  0% {
-    left: 0px;
-    top: 10px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
 /* -------------------------------------------------------------------------- */
 /*                               media quereries                              */
 /* -------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .movie-hover-div {
+    display: none;
+  }
+}
 @media (min-width: 1000px) and (max-width: 1230px) {
   .image {
     width: 200px;
@@ -672,77 +653,6 @@
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: repeat(2, auto);
     grid-row-gap: 20px;
-  }
-}
-@media (min-width: 1000px) {
-  .image:hover .movie-hover-div {
-    display: block;
-    -webkit-animation: fadeIn 500ms;
-            animation: fadeIn 500ms;
-  }
-  @-webkit-keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .image:hover .movie-view-btn button {
-    position: relative;
-    -webkit-animation-name: ComingIn;
-            animation-name: ComingIn;
-    -webkit-animation-duration: 400ms;
-            animation-duration: 400ms;
-  }
-  @-webkit-keyframes ComingIn {
-    0% {
-      top: 20px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @keyframes ComingIn {
-    0% {
-      top: 20px;
-    }
-    100% {
-      top: 0;
-    }
-  }
-}
-@media (min-width: 520px) {
-  .image:hover {
-    background-position: center;
-    background-size: contain;
-  }
-  .image:hover img {
-    display: none;
-  }
-
-  #p-movie4:hover {
-    background-image: url(medium-cover-memento.jpg);
-  }
-
-  #p-movie1:hover {
-    background-image: url(medium-cover-THE.jpg);
-  }
-
-  #p-movie2:hover {
-    background-image: url(medium-cover-matrix.jpg);
-  }
-
-  #p-movie3:hover {
-    background-image: url(medium-cover-yesterday.jpg);
   }
 }
 #warning-box {
@@ -978,39 +888,6 @@
   margin-top: 1rem;
 }
 
-@media (min-width: 520px) {
-  #l-movie1:hover {
-    background-image: url(second_section/medium-cover_001.jpg);
-  }
-
-  #l-movie2:hover {
-    background-image: url(second_section/medium-cover_002.jpg);
-  }
-
-  #l-movie3:hover {
-    background-image: url(second_section/medium-cover_003.jpg);
-  }
-
-  #l-movie4:hover {
-    background-image: url(second_section/medium-cover_004.jpg);
-  }
-
-  #l-movie5:hover {
-    background-image: url(second_section/medium-cover_005.jpg);
-  }
-
-  #l-movie6:hover {
-    background-image: url(second_section/medium-cover_006.jpg);
-  }
-
-  #l-movie7:hover {
-    background-image: url(second_section/medium-cover_007.jpg);
-  }
-
-  #l-movie8:hover {
-    background-image: url(second_section/medium-cover_008.jpg);
-  }
-}
 @media (max-width: 775px) {
   .movie-topics {
     width: 90%;
@@ -1038,86 +915,17 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.808);
 }
 
-#u-movie1 button {
-  background-color: #c7a200;
+.upcoming-movie-container button {
+  background-color: #c7a200 !important;
 }
-#u-movie1 .movie-view-btn {
-  margin: 0;
-}
-
-#u-movie2 button {
-  background-color: #c7a200;
-}
-#u-movie2 .movie-view-btn {
-  margin: 0;
-}
-
-#u-movie3 button {
-  background-color: #c7a200;
-}
-#u-movie3 .movie-view-btn {
-  margin: 0;
-}
-
-#u-movie4 button {
-  background-color: #c7a200;
-}
-#u-movie4 .movie-view-btn {
+.upcoming-movie-container .movie-view-btn {
   margin: 0;
 }
 
 @media (min-width: 520px) {
-  #u-movie1:hover {
-    background-image: url(Upcoming/upcoming-001.jpg);
-  }
-  #u-movie1:hover .movie-hover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #u-movie2:hover {
-    background-image: url(Upcoming/upcoming-002.jpg);
-  }
-  #u-movie2:hover .movie-hover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #u-movie3:hover {
-    background-image: url(Upcoming/upcoming-003.jpg);
-  }
-  #u-movie3:hover .movie-hover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #u-movie4:hover {
-    background-image: url(Upcoming/upcoming-004.jpg);
-  }
-  #u-movie4:hover .movie-hover-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media (max-width: 1000px) {
-  #u-movie1:hover .movie-hover-div {
-    display: none;
-  }
-
-  #u-movie2:hover .movie-hover-div {
-    display: none;
-  }
-
-  #u-movie3:hover .movie-hover-div {
-    display: none;
-  }
-
-  #u-movie4:hover .movie-hover-div {
-    display: none;
+  .upcoming-movie-container:hover .movie-hover-div {
+    justify-content: center !important;
+    align-items: center !important;
   }
 }
 footer {
@@ -1138,10 +946,4 @@ footer h3 {
   footer h3 {
     font-size: 15px;
   }
-}
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=style.css.map */
