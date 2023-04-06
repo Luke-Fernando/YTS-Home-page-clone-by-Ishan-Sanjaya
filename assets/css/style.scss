@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: $roboto;
+  overflow-x: hidden;
 }
 @import "./nav-bar";
 @import "./hero";

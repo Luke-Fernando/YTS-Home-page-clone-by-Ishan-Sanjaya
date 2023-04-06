@@ -3,6 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 #nav-bar {
@@ -143,11 +144,9 @@ body {
   #logo-text-box {
     display: none;
   }
-
   #left-part {
     width: 157.5px;
   }
-
   #logo-box {
     width: 100%;
   }
@@ -164,7 +163,6 @@ body {
     list-style: none;
     padding-right: 18px;
   }
-
   .normal-nav-link-res {
     color: rgba(255, 255, 255, 0.6);
   }
@@ -173,23 +171,18 @@ body {
   #right-part {
     width: 200px;
   }
-
   #search-bar-container {
     display: none;
   }
-
   #nav-links {
     display: none;
   }
-
   #left-part {
     width: 450px;
   }
-
   #logo-box {
     width: 30%;
   }
-
   #logo-text-box {
     display: flex;
   }
@@ -198,36 +191,28 @@ body {
   #nav-bar {
     height: 45px;
   }
-
   #nav-sub {
     width: 95%;
   }
-
   #search-bar-container {
     display: none;
   }
-
   #nav-links {
     display: none;
   }
-
   #left-part {
     width: 100px;
   }
-
   #logo-box {
     width: 100%;
   }
-
   #logo-text-box {
     display: none;
   }
-
   #right-part {
     width: 50%;
     justify-content: flex-end;
   }
-
   #responsive-list a {
     font-size: 20px;
   }
@@ -312,7 +297,7 @@ body {
   font-weight: 600;
 }
 #header-imp-link a:hover {
-  color: #37acffd0;
+  color: rgba(55, 172, 255, 0.8156862745);
 }
 
 #whole-topic {
@@ -347,7 +332,6 @@ body {
 }
 
 #star {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 100%;
@@ -384,7 +368,7 @@ body {
   padding-left: 10px;
 }
 #blog-link a:hover {
-  color: #37acffd0;
+  color: rgba(55, 172, 255, 0.8156862745);
 }
 
 @media (min-width: 1000px) and (max-width: 1230px) {
@@ -396,15 +380,12 @@ body {
   #head-topic {
     display: none;
   }
-
   #head-paragraph {
     display: none;
   }
-
   #header-imp-link {
     display: none;
   }
-
   #hero-main-texts {
     height: auto;
   }
@@ -413,23 +394,18 @@ body {
   #head-topic {
     display: none;
   }
-
   #head-paragraph {
     display: none;
   }
-
   #head-imp-link {
     display: none;
   }
-
   #hero-main-texts {
     height: auto;
   }
-
   .sub-hero-sec {
     width: 775px;
   }
-
   #whole-topic {
     margin-top: 0;
     padding-top: 15px;
@@ -439,24 +415,19 @@ body {
   .sub-hero-sec {
     width: 100%;
   }
-
   #whole-topic {
     padding-top: 0;
     margin-top: 0;
   }
-
   #blog-link a {
     padding-left: 0;
   }
-
   #popular-topic {
     width: 70%;
   }
-
   #blog-path {
     width: 30%;
   }
-
   #blog-icon {
     padding-right: 5px;
   }
@@ -466,7 +437,6 @@ body {
   height: auto;
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, -webkit-max-content);
   grid-template-columns: repeat(4, max-content);
   justify-content: space-evenly;
 }
@@ -511,10 +481,8 @@ body {
 }
 
 .details {
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
@@ -586,7 +554,7 @@ body {
 .movie-view-btn button {
   width: 150px;
   height: 40px;
-  background-color: #3a9c3a;
+  background-color: rgb(58, 156, 58);
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -619,7 +587,6 @@ body {
     width: 150px;
     height: 225px;
   }
-
   .movies {
     margin-top: 2rem;
   }
@@ -629,11 +596,8 @@ body {
     width: 220px;
     height: 330px;
   }
-
   .movies {
-    grid-template-columns: repeat(2, -webkit-max-content);
     grid-template-columns: repeat(2, max-content);
-    grid-template-rows: repeat(2, -webkit-max-content);
     grid-template-rows: repeat(2, max-content);
     grid-row-gap: 20px;
   }
@@ -641,14 +605,12 @@ body {
 @media (max-width: 520px) {
   .image {
     width: 100%;
-    height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
   }
   .image img {
     margin-bottom: -5px;
   }
-
   .movies {
     grid-template-columns: repeat(2, 40%);
     grid-template-rows: repeat(2, auto);
@@ -807,32 +769,25 @@ body {
   #normal-war-text {
     display: none;
   }
-
   #user-data-warning {
     display: none;
   }
-
   #blue-quote {
     display: none;
   }
-
   #res-war-text {
     display: block;
   }
-
   #head-warning h1 span {
     display: none;
   }
-
   #warning-box {
     width: 90%;
     margin: auto;
   }
-
   #normal-btn-text {
     display: none;
   }
-
   #res-btn-text {
     display: block;
   }
@@ -900,7 +855,6 @@ body {
   .latest-movie-header h3 {
     font-size: 16px;
   }
-
   .latest-browse {
     width: 30%;
   }
@@ -916,7 +870,7 @@ body {
 }
 
 .upcoming-movie-container button {
-  background-color: #c7a200 !important;
+  background-color: rgb(199, 162, 0) !important;
 }
 .upcoming-movie-container .movie-view-btn {
   margin: 0;
